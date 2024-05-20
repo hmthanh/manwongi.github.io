@@ -9,7 +9,7 @@ import { sortDate } from "@utils/date"
 
 export function Blog() {
   const { locale } = useRouter()
-  const pages: Page[] = getPagesUnderRoute(`/${locale}/blog`);
+  const pages: Page[] = getPagesUnderRoute(`/${locale}/posts`);
   const filtered: MdxFile[] = pages.filter((page) => "frontMatter" in page).map(page => page as MdxFile)
   const blogPages: MdxFile[] = filtered.sort(sortDate)
 
