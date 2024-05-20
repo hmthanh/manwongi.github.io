@@ -16,7 +16,7 @@ export default {
       toc: true,
     }
   },
-  blog: {
+  posts: {
     type: 'page',
     title: 'Blog',
     theme: {
